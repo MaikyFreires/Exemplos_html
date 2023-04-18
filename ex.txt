@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marcacao de consulta</title>
+    <style>
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Marcacao de consulta</h1>
+    <form>
+      <h2>Dados pessoais</h2>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+
+      <label for="data-nascimento">Data de nascimento:</label>
+      <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+      <label for="endereco">Endereco:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <h2>Dados da consulta</h2>
+      <label for="especialidade">Especialidade:</label>
+      <select id="especialidade" name="especialidade" required>
+        <option value="">Selecione a especialidade</option>
+        <option value="cardiologia">Cardiologia</option>
+        <option value="dermatologia">Dermatologia</option>
+        <option value="ortopedia">Ortopedia</option>
+        <option value="oftalmologia">Oftalmologia</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="medicamentos-alergicos">Medicamentos alergicos:</label>
+      <input type="checkbox" id="antibioticos" name="medicamentos-alergicos" value="antibioticos">
+      <label for="antibioticos">Antibioticos</label>
+      <input type="checkbox" id="antiinflamatorios" name="medicamentos-alergicos" value="antiinflamatorios">
+      <label for="antiinflamatorios">Anti-inflamat
